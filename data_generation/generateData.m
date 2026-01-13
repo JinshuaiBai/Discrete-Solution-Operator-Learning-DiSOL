@@ -121,10 +121,10 @@ for geo_idx = 1:nGeom
 
         if params.draw_fig
             subplot(1,5,4)
-            imshow(geo_chan)
+            imshow(flip(geo_chan))
             title('Geometry mask')
             subplot(1,5,5)
-            imshow(u_bd)
+            imshow(flip(u_bd))
             title('Selected boundary')
             set(gcf, 'Position', [100 100 1500 300]);
             pause(0.1)
