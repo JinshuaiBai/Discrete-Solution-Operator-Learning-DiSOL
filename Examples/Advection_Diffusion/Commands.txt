@@ -1,0 +1,31 @@
+Start:
+
+cd /home/dgx123456/Work/GeoNet/Share_code/Advection_Diffusion
+
+conda activate env_torch1
+
+Train model command in terminal:
+
+python train_DiSOL_Advection_Diffusion.py \
+    --pt_path /home/dgx123456/Work/GeoNet/Share_code/Data/Training_Advection_Diffusion_High_Pe.pt \
+    --save_dir ./model_ckpt \
+    --epochs 300 \
+    --batch_size 200 \
+    --lr 1e-4 \
+    --weight_decay 1e-5 \
+    --save_every 10 \
+    --save_best
+
+Test model command in terminal:
+
+python run_DiSOL_Advection_Diffusion.py \
+    --pt_path /home/dgx123456/Work/GeoNet/Share_code/Data/Training_Advection_Diffusion_High_Pe.pt \
+    --ckpt ./model_ckpt/ckpt_High_Pe_epoch_0300.pth \
+    --model_cfg_json ./model_ckpt/model_cfg.json \
+    --out_dir ./output_results \
+    --vis_n 4 \
+    --ood_pt_path /home/dgx123456/Work/GeoNet/Share_code/Data/OOD_Test_Advection_Difffusion.pt \
+    --use_mask_metrics \
+    --apply_mask_to_pred \
+    --compute_grad_metrics \
+    --dump_predictions
