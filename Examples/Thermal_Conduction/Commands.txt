@@ -1,0 +1,29 @@
+Train model command in terminal:
+
+cd /home/dgx123456/Work/GeoNet/Share_code/Thermal_Conduction
+
+conda activate env_torch1
+
+python train_DiSOL_Thermal_Conduction.py \
+    --pt_path /home/dgx123456/Work/GeoNet/Share_code/Data/Training_Thermal_Conduction.pt \
+    --save_dir ./model_ckpt \
+    --epochs 500 \
+    --batch_size 200 \
+    --lr 1e-4 \
+    --weight_decay 1e-5 \
+    --save_every 10 \
+    --save_best
+
+Test model command in terminal:
+
+python run_DiSOL_Thermal_Conduction.py \
+    --pt_path /home/dgx123456/Work/GeoNet/Share_code/Data/Training_Thermal_Conduction.pt \
+    --ckpt ./model_ckpt/ckpt_epoch_0500.pth \
+    --model_cfg_json ./model_ckpt/model_cfg.json \
+    --out_dir ./output_results \
+    --vis_n 4 \
+    --ood_pt_path /home/dgx123456/Work/GeoNet/Share_code/Data/OOD_Test_Thermal_Conduction.pt \
+    --use_mask_metrics \
+    --apply_mask_to_pred \
+    --compute_grad_metrics \
+    --dump_predictions
