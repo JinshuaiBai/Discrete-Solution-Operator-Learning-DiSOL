@@ -8,7 +8,8 @@ DiSOL is a neural operator framework designed for geometry-dependent partial dif
 
 ## Repository Structure
 
-- `Examples/` — Trained DiSOL models for each case study
+- `Examples/` — Trained DiSOL models for each case study (Pytorch)
+- `data_generation/` — Program for generate training data (MATLAB)
 
 ## Dataset
 
