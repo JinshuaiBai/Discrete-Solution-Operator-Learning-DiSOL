@@ -20,4 +20,4 @@ All datasets used in this work are available at:
 ## Citation
 
 If you find this work useful, please cite our paper:
-[arxiv]http://arxiv.org/abs/2601.09143
+[arxiv](http://arxiv.org/abs/2601.09143)
