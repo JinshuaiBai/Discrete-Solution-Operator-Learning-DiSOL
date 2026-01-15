@@ -14,7 +14,6 @@ DiSOL is a neural operator framework designed for geometry-dependent partial dif
 ## Dataset
 
 All datasets used in this work are available at:
-
 [Google Drive](https://drive.google.com/drive/folders/1hYmyAB41JzXRFSSwlyZg9Sk-sSy3BX-1?usp=sharing)
 
 ## Citation
