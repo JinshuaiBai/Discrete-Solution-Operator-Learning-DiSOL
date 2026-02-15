@@ -46,7 +46,8 @@ pip install torch==2.8.0 --index-url https://download.pytorch.org/whl/cu128
 ```text
 .
 ├── data/
-│   ├── Training_Advection_Diffusion_High_Pe.pt   # training dataset
+│   ├── Training_Advection_Diffusion_Low_Pe.pt    # training dataset for low Pe condition
+│   ├── Training_Advection_Diffusion_High_Pe.pt   # training dataset for high Pe condition
 │   └── OOD_Test_Advection_Diffusion.pt           # OOD test dataset
 │
 ├── model_ckpt/
