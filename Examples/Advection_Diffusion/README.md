@@ -86,7 +86,7 @@ Before training or testing, make sure all dataset files are placed in the `./dat
 To train a DiSOL model for the advection–diffusion equation, run the following command from the project root directory:
 
 ```bash
-python train_DiSOL_Advection_Diffusion.py --pt_path ./data/Training_Advection_Diffusion_High_Pe.pt --save_dir ./model_ckpt --epochs 300 --batch_size 200 --lr 1e-4 --weight_decay 1e-5 --save_every 10 --save_best
+python train_DiSOL_Advection_Diffusion.py --pt_path ./data/Training_Advection_Diffusion_High_Pe.pt --save_dir ./model_ckpt --epochs 300 --batch_size 200 --lr 1e-4 --weight_decay 1e-5 --save_every 100 --save_best
 ```
 
 ### Key arguments
