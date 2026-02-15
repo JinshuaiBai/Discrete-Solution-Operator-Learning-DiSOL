@@ -85,7 +85,7 @@ Before training or testing, ensure all dataset files are placed in the `./data` 
 To train a DiSOL model for linear elasticity, run the following command from the project root directory:
 
 ```bash
-python train_DiSOL_Elasticity.py --pt_path ./data/Training_Elasticity.pt --save_dir ./model_ckpt --epochs 500 --batch_size 200 --lr 1e-4 --weight_decay 1e-5 --save_every 10 --save_best
+python train_DiSOL_Elasticity.py --pt_path ./data/Training_Elasticity.pt --save_dir ./model_ckpt --epochs 500 --batch_size 200 --lr 1e-4 --weight_decay 1e-5 --save_every 100 --save_best
 ```
 
 ### Key arguments
