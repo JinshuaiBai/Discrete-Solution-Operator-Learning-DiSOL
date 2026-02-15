@@ -84,7 +84,7 @@ Before training or testing, the dataset files must be placed in the `./data` dir
 To train a DiSOL model for the Poisson equation, run the following command from the project root directory:
 
 ```bash
-python train_DiSOL_Poisson.py --pt_path ./data/Training_Poisson.pt --save_dir ./model_ckpt --epochs 500 --batch_size 200 --lr 1e-4 --weight_decay 1e-5 --save_every 10 --save_best
+python train_DiSOL_Poisson.py --pt_path ./data/Training_Poisson.pt --save_dir ./model_ckpt --epochs 500 --batch_size 200 --lr 1e-4 --weight_decay 1e-5 --save_every 100 --save_best
 ```
 
 ---
@@ -94,7 +94,7 @@ python train_DiSOL_Poisson.py --pt_path ./data/Training_Poisson.pt --save_dir ./
 To evaluate a trained DiSOL model and generate visualizations and metrics, run:
 
 ```bash
-python run_DiSOL_Poisson.py --pt_path ./data/Training_Poisson.pt --ckpt ./model_ckpt/ckpt_epoch_0500.pth --model_cfg_json ./model_ckpt/model_cfg.json --out_dir ./output_results --vis_n 4 --ood_pt_path ./data/OOD_Test_Poisson.pt --use_mask_metrics --apply_mask_to_pred --compute_grad_metrics --dump_predictions
+python run_DiSOL_Poisson.py --pt_path ./data/Training_Poisson.pt --ckpt ./model_ckpt/ckpt_epoch_0500.pth --model_cfg_json ./model_ckpt/model_cfg.json --out_dir ./output_results --vis_n 4 --ood_pt_path ./data/OOD_Test_Poisson.pt --use_mask_metrics --apply_mask_to_pred
 ```
 
 ---
