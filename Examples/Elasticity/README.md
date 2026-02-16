@@ -110,10 +110,8 @@ python run_DiSOL_Elasticity.py --pt_path ./data/Training_Elasticity.pt --ckpt ./
 
 ### Evaluation features
 - Masked error metrics on the active computational domain  
-- Gradient-based error metrics (finite differences)  
 - OOD generalization testing under geometric shifts  
-- Visualization of displacement fields and errors  
-- Optional dumping of raw predictions for post-processing  
+- Visualization of displacement fields and errors 
 
 ---
 
