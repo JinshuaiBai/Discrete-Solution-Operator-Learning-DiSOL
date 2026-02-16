@@ -109,7 +109,6 @@ python run_DiSOL_Advection_Diffusion.py --pt_path ./data/Training_Advection_Diff
 
 ### Evaluation features
 - Masked error metrics on the active computational domain  
-- Gradient-based error metrics  
 - OOD generalization testing under geometric shifts  
 - Visualization of prediction fields and errors  
 
