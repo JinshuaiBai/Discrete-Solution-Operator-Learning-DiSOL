@@ -125,7 +125,6 @@ All evaluation results will be written to:
 This directory includes:
 - Saved prediction tensors
 - Visualization figures
-- Computed scalar metrics (including gradient-based metrics)
 
 ---
 
