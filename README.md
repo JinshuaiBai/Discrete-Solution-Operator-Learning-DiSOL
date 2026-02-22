@@ -13,13 +13,12 @@ DiSOL targets **geometry-driven discrete structural variation** (e.g., topology 
 
 - End-to-end PyTorch training / validation / testing code for **four benchmark cases** (in the paper order):
   1. Poisson
-  2. Advection–Diffusion
+  2. Advection Diffusion
   3. Linear Elasticity
   4. Thermal Conduction
 - **Pretrained checkpoints** and **OOD evaluation** utilities (see each case folder).
 
-> **Code Ocean capsule:** an executable Code Ocean capsule for peer review / reproducibility will be provided.  
-> *(Link/DOI will be added here once available.)*
+> **Code Ocean capsule:** an executable Code Ocean capsule for peer review / reproducibility is provided: https://codeocean.com/capsule/4396603/tree/v1 
 
 ---
 
@@ -63,7 +62,7 @@ cd Examples/Poisson
 
 All datasets used in this work are publicly available on Zenodo:
 
-- **Zenodo DOI:** https://doi.org/10.5281/zenodo.18639633
+- **Zenodo DOI:** https://doi.org/10.5281/zenodo.18639634
 
 The Zenodo record contains the **full datasets** used for the paper experiments.  
 For lightweight verification (e.g., Code Ocean), toy subsets may be used; see the capsule (when released) or the per-case README instructions.
@@ -88,6 +87,14 @@ If you use this repository or the datasets, please cite:
   author  = {Bai, Jinshuai and Li, Haolin and Sharif Khodaei, Zahra and Aliabadi, M. H. and Gu, YuanTong and Feng, Xi-Qiao},
   journal = {arXiv preprint arXiv:2601.09143},
   year    = {2026}
+}
+
+@dataset{ZenodoDataset,
+  author = {Bai, Jinshuai and Li, Haolin and Sharif Khodaei, Zahra and Aliabadi, M.H. and Gu, YuanTong and Feng, Xi-Qiao},
+  year = {2026},
+  publisher = {Zenodo},
+  doi = {10.5281/zenodo.18639634},
+  url = {https://doi.org/10.5281/zenodo.18639634}
 }
 ```
 
